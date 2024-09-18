@@ -1,0 +1,402 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    border: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+.nav-bar ul
+{ 
+    
+    gap: 45px;
+    padding-left: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type:none;
+}
+
+a 
+{
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+}
+.nav-bar li
+{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+} 
+.nav-bar li::after
+{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 5px;
+    background-color: maroon;
+    transition: width 1.5s ease;
+
+}
+.nav-bar li:hover::after
+{
+    width: 100%;
+}
+
+.logo
+{
+    color: white;
+}
+
+header
+{  
+    position: fixed;
+    z-index: 2; 
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    background-color: #090909;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-sec
+{   height: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(17, 16, 16);
+}
+
+.img
+{
+    width: 400px;
+    height: 600px;
+    background-image: url("https://i.pinimg.com/736x/87/a7/01/87a701de69b24d508b6799f4abe90e2c.jpg");
+    background-size:cover;
+    background-position: center;
+    margin-left: 70px;
+    border-radius: 50%;
+}
+
+.text
+{   height: 250px;
+    width: 850px;
+    padding: 120px 70px 50px 30px;
+ 
+    
+}
+
+.text h2
+{
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom:25px ;
+}
+
+.text p
+{
+    color: rgb(81, 78, 78);
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.btn button
+{
+    height: 60px;
+    width: 200px;
+    background-color: rgb(93, 2, 2);
+    color: white;
+    margin-top:25px ;
+    font-size: 20px;
+    border-radius: 30px;
+    border: none;
+}
+.btn button:hover
+{
+    background-color: rgb(17, 16, 16);
+    border:2px solid rgb(81, 78, 78);
+}
+
+
+.about-me 
+{
+    padding-top: 50px;
+    height: 90px;
+    color: rgb(252, 252, 253);
+    font-size: 35px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(17, 16, 16);
+}
+
+.content
+{
+    height: 600px;
+    background-color: rgb(17, 16, 16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(243, 243, 242);
+    gap: 100px;
+}
+
+.box
+{
+    height: 400px;
+    width:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.box::before,
+.box::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 80px;
+    border: 5px solid  rgb(81, 78, 78);
+}
+
+.box::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.box::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+.box::before,
+.box::after {
+    content: '';
+    position: absolute;
+    width: 90px;
+
+}
+.box h3
+{
+    font-size: 35px;
+    font-weight: 200;
+    color: rgb(118, 4, 4);
+}
+
+.box p
+{
+    font-size: 23px;
+    font-weight: 100;
+    color: rgb(81, 78, 78);
+    padding: 25px 20px 25px 20px;
+}
+.projects
+{
+    background-color: rgb(17, 16, 16);
+    height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.prj-div
+{
+    height: 500px;
+    width:700px;
+    margin: 70px 70px 0px 0px;
+   
+
+}
+.vid {
+    width: 100%; 
+    height: 500px;
+    object-fit: fill; 
+}
+
+.contact
+{
+    height:200px;
+    background-color:rgb(17, 16, 16);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px 160px 0px 160px;
+
+}
+
+.contact h2
+{
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom:25px ;
+}
+
+.contact p
+{
+    color:rgb(81, 78, 78) ;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.info
+{
+    height: 750px;
+    background-color:rgb(17, 16, 16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.address-form
+{
+    height:600px;
+    width: 600px;
+    color: rgb(247, 247, 247);
+    margin: 0px 70px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 12px #4c4c59;
+    
+}
+
+.add-content h5
+{
+    font-size: 25px;
+    color: white;
+    padding-bottom: 15px;
+  
+}
+
+.add-content p
+{
+    color: rgb(81, 78, 78);
+    font-size: 20px;
+    padding-bottom:15px;
+}
+
+.address
+{
+    height: 100px;
+    width: 600px;
+    padding: 35px 0px 0px 170px;
+    display: flex;
+}
+.icon i
+{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    font-size: 25px;
+    background-color:  rgb(17, 16, 16);
+    color: #ffffff;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    border: none;
+}
+
+.contact-form
+{
+    height:600px;
+    width: 600px;
+    color: rgb(46, 45, 46);
+    margin: 0px 70px 0px 0px;
+    box-shadow: 0px 0px 12px #4c4c59;
+   
+   
+}
+.contact-form h4
+{
+    font-size: 40px;
+    font-weight: 200;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.input
+{
+    padding:20px 35px 60px 30px ;
+}
+
+.input label
+{
+    font-size: 25px;
+    color:rgb(81, 78, 78) ;
+
+}
+
+
+.underline-input {
+    border: none;
+    border-bottom: 2px solid #ffffff; 
+    outline: none; 
+    width: 100%;
+    line-height: 1; 
+    margin: 35px 0px 35px 0px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: center;
+}  
+.underline-input:focus {
+    border-bottom-color: #a0092f; 
+}
+.send-btn button
+{
+    height: 60px;
+    width: 200px;
+    background-color: rgb(93, 2, 2);
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    border: none;
+}
+.send-btn button:hover
+{
+    background-color: rgb(17, 16, 16);
+    border:2px solid rgb(81, 78, 78);
+}
+.copy-right
+{
+    height: 40px;
+    background-color:rgb(13, 11, 11);
+    color:rgb(149, 144, 144);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+
+
+
+
+
+
+
